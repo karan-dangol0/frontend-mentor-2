@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Poppins&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Young+Serif&display=swap');
+
+
+:root{
+    --green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%;);
+    --grey-700: hsl(0, 0%, 20%);
+    --grey-800: hsl(0, 0%, 12%);
+    --grey-900: hsl(0, 0%, 8%);
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 14px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    font-family: "inter", sans-serif;
+    background-color: var(--grey-900);
+    color: hsl(0, 0%, 100%);
+    
+}
+
+main{
+    width: 400px;
+    height: 660px;
+    /* border: 1px solid red; */
+    background-color: var(--grey-800);
+    border-radius: 1rem;
+
+}
+
+.container{
+    padding: 1.5rem 1.5rem;
+    display: flex;
+    flex-direction: column; 
+    /* align-items: center; */
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+.container img{
+    width: 6rem;
+    border-radius: 100%;
+}
+
+.heading{
+    /* color: var(--green); */
+    font-size: 1.7rem;
+    margin:  1rem;
+
+
+}
+
+
+.text{
+    font-size: 1rem;
+    
+    
+}
+
+.text.location{
+    color: var(--green);
+    margin-bottom: .5rem;
+}
+
+.text.intro{
+    margin: 1.5rem;
+}
+
+.btn{
+    
+    all: unset;
+    width: 80%;
+    background-color: var(--grey-700);
+    text-align: center;
+    font-size: 1.1rem;
+    outline: none;
+    color: hsl(0, 0%, 100%);
+    padding: 1rem;
+    margin: 5px 0 12px 0;
+    border-radius: .5rem;
+    transition: 500ms ease;
+    
+
+}
+
+.btn:hover{
+    background-color: var(--green);
+    color: hsl(0, 0%, 0%);
+}
+
+@media (max-width: 25rem) {
+    .container{
+        padding: 1rem;
+    }
+    .heading{
+        font-size: 1.4rem;
+    }
+    .text{
+        font-size: .8rem;
+    }
+    .btn{
+        padding: 1rem .5rem;     
+    }
+}
+
+
+
+
+
+
+
+
+
+
